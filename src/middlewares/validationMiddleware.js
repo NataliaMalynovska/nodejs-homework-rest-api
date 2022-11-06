@@ -21,6 +21,7 @@ module.exports = {
 					"string.pattern.base": `"" must be 10 digit number`,
 					"any.required": `"" is a required field`,
 				}),
+			favorite: Joi.boolean(),
 		});
 
 		const validationResult = schema.validate(req.body);
@@ -49,6 +50,7 @@ module.exports = {
 					"string.pattern.base": `"" must be 10 digit number`,
 					"any.required": `"" is a required field`,
 				}),
+			favorite: Joi.boolean(),
 		}).min(1);
 
 		const validationResult = schema.validate(req.body);
