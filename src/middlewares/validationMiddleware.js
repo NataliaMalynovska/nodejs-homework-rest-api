@@ -23,7 +23,6 @@ module.exports = {
 				}),
 			favorite: Joi.boolean(),
 		});
-
 		const validationResult = schema.validate(req.body);
 		if (validationResult.error) {
 			return res.status(400).json({ status: validationResult.error.details });
@@ -52,7 +51,6 @@ module.exports = {
 				}),
 			favorite: Joi.boolean(),
 		}).min(1);
-
 		const validationResult = schema.validate(req.body);
 		if (validationResult.error) {
 			return res.status(400).json({ status: validationResult.error.details });
