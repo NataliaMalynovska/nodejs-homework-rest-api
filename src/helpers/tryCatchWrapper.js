@@ -8,6 +8,4 @@ function tryCatchWrapper(endpointFn) {
 	};
 }
 
-module.exports = {
-	tryCatchWrapper,
-};
+module.exports = { tryCatchWrapper };
